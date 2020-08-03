@@ -26,5 +26,10 @@ namespace BMI
         {
 
         }
+
+        private void weightlabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

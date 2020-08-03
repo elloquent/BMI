@@ -45,8 +45,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.kiloButton = new System.Windows.Forms.RadioButton();
             this.poundButton = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.weightlabel = new System.Windows.Forms.Label();
+            this.heightlabel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -230,11 +237,74 @@
             this.poundButton.Text = "pound";
             this.poundButton.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.heightlabel);
+            this.panel1.Controls.Add(this.weightlabel);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(2, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(296, 159);
+            this.panel1.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(3, 8);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(290, 55);
+            this.textBox1.TabIndex = 0;
+            // 
+            // weightlabel
+            // 
+            this.weightlabel.Location = new System.Drawing.Point(3, 66);
+            this.weightlabel.Name = "weightlabel";
+            this.weightlabel.Size = new System.Drawing.Size(93, 37);
+            this.weightlabel.TabIndex = 1;
+            this.weightlabel.Text = "Weight";
+            this.weightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // heightlabel
+            // 
+            this.heightlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.heightlabel.Location = new System.Drawing.Point(3, 106);
+            this.heightlabel.Name = "heightlabel";
+            this.heightlabel.Size = new System.Drawing.Size(93, 38);
+            this.heightlabel.TabIndex = 2;
+            this.heightlabel.Text = "Height";
+            this.heightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Location = new System.Drawing.Point(102, 109);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(191, 38);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox3.Location = new System.Drawing.Point(102, 65);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(191, 38);
+            this.textBox3.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 442);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.backbutton);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -249,6 +319,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -272,6 +344,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton poundButton;
         private System.Windows.Forms.RadioButton kiloButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label heightlabel;
+        private System.Windows.Forms.Label weightlabel;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
