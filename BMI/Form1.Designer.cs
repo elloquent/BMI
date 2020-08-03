@@ -42,7 +42,11 @@
             this.zerobutton = new System.Windows.Forms.Button();
             this.clearbutton = new System.Windows.Forms.Button();
             this.backbutton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.kiloButton = new System.Windows.Forms.RadioButton();
+            this.poundButton = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -187,16 +191,51 @@
             // 
             this.backbutton.Location = new System.Drawing.Point(5, 209);
             this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(289, 41);
+            this.backbutton.Size = new System.Drawing.Size(293, 41);
             this.backbutton.TabIndex = 1;
             this.backbutton.Text = "Backspace";
             this.backbutton.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.poundButton);
+            this.groupBox1.Controls.Add(this.kiloButton);
+            this.groupBox1.Location = new System.Drawing.Point(5, 146);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(292, 57);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            // 
+            // kiloButton
+            // 
+            this.kiloButton.AutoSize = true;
+            this.kiloButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kiloButton.Location = new System.Drawing.Point(34, 23);
+            this.kiloButton.Name = "kiloButton";
+            this.kiloButton.Size = new System.Drawing.Size(102, 28);
+            this.kiloButton.TabIndex = 0;
+            this.kiloButton.TabStop = true;
+            this.kiloButton.Text = "Kilogram";
+            this.kiloButton.UseVisualStyleBackColor = true;
+            // 
+            // poundButton
+            // 
+            this.poundButton.AutoSize = true;
+            this.poundButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poundButton.Location = new System.Drawing.Point(181, 24);
+            this.poundButton.Name = "poundButton";
+            this.poundButton.Size = new System.Drawing.Size(83, 28);
+            this.poundButton.TabIndex = 1;
+            this.poundButton.TabStop = true;
+            this.poundButton.Text = "pound";
+            this.poundButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 442);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.backbutton);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -208,6 +247,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -228,6 +269,9 @@
         private System.Windows.Forms.Button zerobutton;
         private System.Windows.Forms.Button clearbutton;
         private System.Windows.Forms.Button backbutton;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton poundButton;
+        private System.Windows.Forms.RadioButton kiloButton;
     }
 }
 
