@@ -1,6 +1,6 @@
 ﻿namespace BMI
 {
-    partial class Form1
+    partial class BMIcalculater
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.firstbutton = new System.Windows.Forms.Button();
-            this.secondbutton = new System.Windows.Forms.Button();
-            this.thirdbutton = new System.Windows.Forms.Button();
-            this.fourbutton = new System.Windows.Forms.Button();
-            this.fifthbutton = new System.Windows.Forms.Button();
-            this.sixthbutton = new System.Windows.Forms.Button();
             this.sevenbutton = new System.Windows.Forms.Button();
+            this.fourbutton = new System.Windows.Forms.Button();
             this.eightbutton = new System.Windows.Forms.Button();
+            this.fifthbutton = new System.Windows.Forms.Button();
+            this.secondbutton = new System.Windows.Forms.Button();
             this.ninebutton = new System.Windows.Forms.Button();
+            this.sixthbutton = new System.Windows.Forms.Button();
+            this.thirdbutton = new System.Windows.Forms.Button();
+            this.firstbutton = new System.Windows.Forms.Button();
             this.pointbutton = new System.Windows.Forms.Button();
             this.zerobutton = new System.Windows.Forms.Button();
             this.clearbutton = new System.Windows.Forms.Button();
             this.backbutton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.kiloButton = new System.Windows.Forms.RadioButton();
             this.poundButton = new System.Windows.Forms.RadioButton();
+            this.kiloButton = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.weightlabel = new System.Windows.Forms.Label();
-            this.heightlabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.heightlabel = new System.Windows.Forms.Label();
+            this.weightlabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -81,153 +81,157 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(296, 186);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // firstbutton
+            // sevenbutton
             // 
-            this.firstbutton.Location = new System.Drawing.Point(3, 99);
-            this.firstbutton.Name = "firstbutton";
-            this.firstbutton.Size = new System.Drawing.Size(93, 42);
-            this.firstbutton.TabIndex = 0;
-            this.firstbutton.Text = "1";
-            this.firstbutton.UseVisualStyleBackColor = true;
-            // 
-            // secondbutton
-            // 
-            this.secondbutton.Location = new System.Drawing.Point(102, 99);
-            this.secondbutton.Name = "secondbutton";
-            this.secondbutton.Size = new System.Drawing.Size(93, 42);
-            this.secondbutton.TabIndex = 1;
-            this.secondbutton.Text = "2";
-            this.secondbutton.UseVisualStyleBackColor = true;
-            // 
-            // thirdbutton
-            // 
-            this.thirdbutton.Location = new System.Drawing.Point(201, 99);
-            this.thirdbutton.Name = "thirdbutton";
-            this.thirdbutton.Size = new System.Drawing.Size(94, 42);
-            this.thirdbutton.TabIndex = 2;
-            this.thirdbutton.Text = "3";
-            this.thirdbutton.UseVisualStyleBackColor = true;
+            this.sevenbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.sevenbutton.Location = new System.Drawing.Point(3, 3);
+            this.sevenbutton.Name = "sevenbutton";
+            this.sevenbutton.Size = new System.Drawing.Size(92, 35);
+            this.sevenbutton.TabIndex = 12;
+            this.sevenbutton.Text = "7";
+            this.sevenbutton.UseVisualStyleBackColor = false;
             // 
             // fourbutton
             // 
-            this.fourbutton.Location = new System.Drawing.Point(3, 51);
+            this.fourbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.fourbutton.Location = new System.Drawing.Point(3, 44);
             this.fourbutton.Name = "fourbutton";
-            this.fourbutton.Size = new System.Drawing.Size(93, 41);
+            this.fourbutton.Size = new System.Drawing.Size(92, 35);
             this.fourbutton.TabIndex = 3;
             this.fourbutton.Text = "4";
-            this.fourbutton.UseVisualStyleBackColor = true;
-            // 
-            // fifthbutton
-            // 
-            this.fifthbutton.Location = new System.Drawing.Point(102, 51);
-            this.fifthbutton.Name = "fifthbutton";
-            this.fifthbutton.Size = new System.Drawing.Size(93, 41);
-            this.fifthbutton.TabIndex = 4;
-            this.fifthbutton.Text = "5";
-            this.fifthbutton.UseVisualStyleBackColor = true;
-            // 
-            // sixthbutton
-            // 
-            this.sixthbutton.Location = new System.Drawing.Point(201, 51);
-            this.sixthbutton.Name = "sixthbutton";
-            this.sixthbutton.Size = new System.Drawing.Size(94, 41);
-            this.sixthbutton.TabIndex = 5;
-            this.sixthbutton.Text = "6";
-            this.sixthbutton.UseVisualStyleBackColor = true;
-            // 
-            // sevenbutton
-            // 
-            this.sevenbutton.Location = new System.Drawing.Point(3, 3);
-            this.sevenbutton.Name = "sevenbutton";
-            this.sevenbutton.Size = new System.Drawing.Size(93, 42);
-            this.sevenbutton.TabIndex = 12;
-            this.sevenbutton.Text = "7";
-            this.sevenbutton.UseVisualStyleBackColor = true;
+            this.fourbutton.UseVisualStyleBackColor = false;
             // 
             // eightbutton
             // 
-            this.eightbutton.Location = new System.Drawing.Point(102, 3);
+            this.eightbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.eightbutton.Location = new System.Drawing.Point(101, 3);
             this.eightbutton.Name = "eightbutton";
-            this.eightbutton.Size = new System.Drawing.Size(93, 41);
+            this.eightbutton.Size = new System.Drawing.Size(92, 35);
             this.eightbutton.TabIndex = 13;
             this.eightbutton.Text = "8";
-            this.eightbutton.UseVisualStyleBackColor = true;
+            this.eightbutton.UseVisualStyleBackColor = false;
+            // 
+            // fifthbutton
+            // 
+            this.fifthbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.fifthbutton.Location = new System.Drawing.Point(101, 44);
+            this.fifthbutton.Name = "fifthbutton";
+            this.fifthbutton.Size = new System.Drawing.Size(92, 35);
+            this.fifthbutton.TabIndex = 4;
+            this.fifthbutton.Text = "5";
+            this.fifthbutton.UseVisualStyleBackColor = false;
+            // 
+            // secondbutton
+            // 
+            this.secondbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.secondbutton.Location = new System.Drawing.Point(101, 85);
+            this.secondbutton.Name = "secondbutton";
+            this.secondbutton.Size = new System.Drawing.Size(92, 35);
+            this.secondbutton.TabIndex = 1;
+            this.secondbutton.Text = "2";
+            this.secondbutton.UseVisualStyleBackColor = false;
             // 
             // ninebutton
             // 
-            this.ninebutton.Location = new System.Drawing.Point(201, 3);
+            this.ninebutton.BackColor = System.Drawing.Color.Fuchsia;
+            this.ninebutton.Location = new System.Drawing.Point(199, 3);
             this.ninebutton.Name = "ninebutton";
-            this.ninebutton.Size = new System.Drawing.Size(94, 42);
+            this.ninebutton.Size = new System.Drawing.Size(94, 35);
             this.ninebutton.TabIndex = 14;
             this.ninebutton.Text = "9";
-            this.ninebutton.UseVisualStyleBackColor = true;
+            this.ninebutton.UseVisualStyleBackColor = false;
+            // 
+            // sixthbutton
+            // 
+            this.sixthbutton.BackColor = System.Drawing.Color.Fuchsia;
+            this.sixthbutton.Location = new System.Drawing.Point(199, 44);
+            this.sixthbutton.Name = "sixthbutton";
+            this.sixthbutton.Size = new System.Drawing.Size(94, 35);
+            this.sixthbutton.TabIndex = 5;
+            this.sixthbutton.Text = "6";
+            this.sixthbutton.UseVisualStyleBackColor = false;
+            // 
+            // thirdbutton
+            // 
+            this.thirdbutton.BackColor = System.Drawing.Color.Fuchsia;
+            this.thirdbutton.Location = new System.Drawing.Point(199, 85);
+            this.thirdbutton.Name = "thirdbutton";
+            this.thirdbutton.Size = new System.Drawing.Size(94, 35);
+            this.thirdbutton.TabIndex = 2;
+            this.thirdbutton.Text = "3";
+            this.thirdbutton.UseVisualStyleBackColor = false;
+            // 
+            // firstbutton
+            // 
+            this.firstbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.firstbutton.Location = new System.Drawing.Point(3, 85);
+            this.firstbutton.Name = "firstbutton";
+            this.firstbutton.Size = new System.Drawing.Size(92, 35);
+            this.firstbutton.TabIndex = 0;
+            this.firstbutton.Text = "1";
+            this.firstbutton.UseVisualStyleBackColor = false;
             // 
             // pointbutton
             // 
-            this.pointbutton.Location = new System.Drawing.Point(3, 147);
+            this.pointbutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.pointbutton.Location = new System.Drawing.Point(3, 126);
             this.pointbutton.Name = "pointbutton";
-            this.pointbutton.Size = new System.Drawing.Size(93, 39);
+            this.pointbutton.Size = new System.Drawing.Size(92, 35);
             this.pointbutton.TabIndex = 15;
             this.pointbutton.Text = ".";
             this.pointbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.pointbutton.UseVisualStyleBackColor = true;
+            this.pointbutton.UseVisualStyleBackColor = false;
             // 
             // zerobutton
             // 
-            this.zerobutton.Location = new System.Drawing.Point(102, 147);
+            this.zerobutton.BackColor = System.Drawing.Color.Goldenrod;
+            this.zerobutton.Location = new System.Drawing.Point(101, 126);
             this.zerobutton.Name = "zerobutton";
-            this.zerobutton.Size = new System.Drawing.Size(93, 39);
+            this.zerobutton.Size = new System.Drawing.Size(92, 35);
             this.zerobutton.TabIndex = 16;
             this.zerobutton.Text = "0";
-            this.zerobutton.UseVisualStyleBackColor = true;
+            this.zerobutton.UseVisualStyleBackColor = false;
             // 
             // clearbutton
             // 
-            this.clearbutton.Location = new System.Drawing.Point(201, 147);
+            this.clearbutton.BackColor = System.Drawing.Color.Fuchsia;
+            this.clearbutton.Location = new System.Drawing.Point(199, 126);
             this.clearbutton.Name = "clearbutton";
-            this.clearbutton.Size = new System.Drawing.Size(94, 39);
+            this.clearbutton.Size = new System.Drawing.Size(94, 35);
             this.clearbutton.TabIndex = 17;
             this.clearbutton.Text = "Clear";
-            this.clearbutton.UseVisualStyleBackColor = true;
+            this.clearbutton.UseVisualStyleBackColor = false;
             // 
             // backbutton
             // 
+            this.backbutton.BackColor = System.Drawing.Color.Fuchsia;
             this.backbutton.Location = new System.Drawing.Point(5, 209);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(293, 41);
             this.backbutton.TabIndex = 1;
             this.backbutton.Text = "Backspace";
-            this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.groupBox1.Controls.Add(this.poundButton);
             this.groupBox1.Controls.Add(this.kiloButton);
-            this.groupBox1.Location = new System.Drawing.Point(5, 146);
+            this.groupBox1.Location = new System.Drawing.Point(-7, 146);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(292, 57);
+            this.groupBox1.Size = new System.Drawing.Size(315, 57);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            // 
-            // kiloButton
-            // 
-            this.kiloButton.AutoSize = true;
-            this.kiloButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kiloButton.Location = new System.Drawing.Point(34, 23);
-            this.kiloButton.Name = "kiloButton";
-            this.kiloButton.Size = new System.Drawing.Size(102, 28);
-            this.kiloButton.TabIndex = 0;
-            this.kiloButton.TabStop = true;
-            this.kiloButton.Text = "Kilogram";
-            this.kiloButton.UseVisualStyleBackColor = true;
             // 
             // poundButton
             // 
             this.poundButton.AutoSize = true;
+            this.poundButton.BackColor = System.Drawing.Color.Aqua;
             this.poundButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.poundButton.Location = new System.Drawing.Point(181, 24);
             this.poundButton.Name = "poundButton";
@@ -235,10 +239,24 @@
             this.poundButton.TabIndex = 1;
             this.poundButton.TabStop = true;
             this.poundButton.Text = "pound";
-            this.poundButton.UseVisualStyleBackColor = true;
+            this.poundButton.UseVisualStyleBackColor = false;
+            // 
+            // kiloButton
+            // 
+            this.kiloButton.AutoSize = true;
+            this.kiloButton.BackColor = System.Drawing.Color.Aqua;
+            this.kiloButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kiloButton.Location = new System.Drawing.Point(34, 23);
+            this.kiloButton.Name = "kiloButton";
+            this.kiloButton.Size = new System.Drawing.Size(102, 28);
+            this.kiloButton.TabIndex = 0;
+            this.kiloButton.TabStop = true;
+            this.kiloButton.Text = "Kilogram";
+            this.kiloButton.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.heightlabel);
@@ -249,34 +267,15 @@
             this.panel1.Size = new System.Drawing.Size(296, 159);
             this.panel1.TabIndex = 3;
             // 
-            // textBox1
+            // textBox3
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(3, 8);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(290, 55);
-            this.textBox1.TabIndex = 0;
-            // 
-            // weightlabel
-            // 
-            this.weightlabel.Location = new System.Drawing.Point(3, 66);
-            this.weightlabel.Name = "weightlabel";
-            this.weightlabel.Size = new System.Drawing.Size(93, 37);
-            this.weightlabel.TabIndex = 1;
-            this.weightlabel.Text = "Weight";
-            this.weightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // heightlabel
-            // 
-            this.heightlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.heightlabel.Location = new System.Drawing.Point(3, 106);
-            this.heightlabel.Name = "heightlabel";
-            this.heightlabel.Size = new System.Drawing.Size(93, 38);
-            this.heightlabel.TabIndex = 2;
-            this.heightlabel.Text = "Height";
-            this.heightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox3.Location = new System.Drawing.Point(102, 65);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(191, 38);
+            this.textBox3.TabIndex = 4;
             // 
             // textBox2
             // 
@@ -289,20 +288,40 @@
             this.textBox2.Size = new System.Drawing.Size(191, 38);
             this.textBox2.TabIndex = 3;
             // 
-            // textBox3
+            // heightlabel
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(102, 65);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(191, 38);
-            this.textBox3.TabIndex = 4;
+            this.heightlabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.heightlabel.Location = new System.Drawing.Point(3, 106);
+            this.heightlabel.Name = "heightlabel";
+            this.heightlabel.Size = new System.Drawing.Size(93, 38);
+            this.heightlabel.TabIndex = 2;
+            this.heightlabel.Text = "Height";
+            this.heightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // weightlabel
+            // 
+            this.weightlabel.Location = new System.Drawing.Point(3, 66);
+            this.weightlabel.Name = "weightlabel";
+            this.weightlabel.Size = new System.Drawing.Size(93, 37);
+            this.weightlabel.TabIndex = 1;
+            this.weightlabel.Text = "Weight";
+            this.weightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(3, 8);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(290, 55);
+            this.textBox1.TabIndex = 0;
+            // 
+            // BMIcalculater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(300, 442);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -312,7 +331,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "BMIcalculater";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
