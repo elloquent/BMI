@@ -78,20 +78,41 @@ namespace BMI
         {
             if (poundButton.Checked == true)
             {
-                if (string.IsNullOrEmpty(weighttextBox.Text))    //check to see if the text is empty
+                if (weighttextBox.Text =="")    //check to see if the text is empty
                 {
                     errorProvider1.SetError(weighttextBox, "Please enter a value");  //display the following message
                     weighttextBox.Focus(); //refocuses cursor
                 }
-                else if (string.IsNullOrEmpty(heighttextBox.Text))    //check to see if the text is empty
+                else if (heighttextBox.Text =="")    //check to see if the text is empty
                 {
                     errorProvider1.SetError(heighttextBox, "Please enter a value");  //display the following message
                     heighttextBox.Focus(); //refocuses cursor
                 }
                 else
                 {
-                    _weightvalue = double.Parse(weighttextBox.Text);
-                    _heightvalue = double.Parse(heighttextBox.Text);
+                    try
+                    {
+                        _weightvalue = double.Parse(weighttextBox.Text);
+                     
+                    }
+                    catch
+                    {
+                        MessageBox.Show("you must input a number and not a letter");
+                        weighttextBox.Text = "";
+                        weighttextBox.Focus();
+                    }
+                    try
+                    {
+                        _heightvalue = double.Parse(heighttextBox.Text);
+                        
+                    }
+                    catch
+                    {
+
+                        MessageBox.Show("you must input a number and not a letter");
+                        heighttextBox.Text = "";
+                        heighttextBox.Focus();
+                    }
                     
                     _result = (_weightvalue * 703) / (_heightvalue * _heightvalue);
                     resulttextBox.Text = _result.ToString();
@@ -117,20 +138,41 @@ namespace BMI
             }
             else if (kiloButton.Checked == true)
             {
-                if (string.IsNullOrEmpty(weighttextBox.Text))    //check to see if the text is empty
+                if (weighttextBox.Text == "")    //check to see if the text is empty
                 {
                     errorProvider1.SetError(weighttextBox, "Please enter a value");  //display the following message
                     weighttextBox.Focus(); //refocuses cursor
                 }
-                else if (string.IsNullOrEmpty(heighttextBox.Text))    //check to see if the text is empty
+                else if (heighttextBox.Text == "")    //check to see if the text is empty
                 {
                     errorProvider1.SetError(heighttextBox, "Please enter a value");  //display the following message
                     heighttextBox.Focus(); //refocuses cursor
                 }
                 else
                 {
-                    _weightvalue = Convert.ToDouble(weighttextBox.Text);
-                    _heightvalue = Convert.ToDouble(heighttextBox.Text);
+                    try
+                    {
+                        _weightvalue = double.Parse(weighttextBox.Text);
+
+                    }
+                    catch
+                    {
+                        MessageBox.Show("you must input a number and not a letter");
+                        weighttextBox.Text = "";
+                        weighttextBox.Focus();
+                    }
+                    try
+                    {
+                        _heightvalue = double.Parse(heighttextBox.Text);
+
+                    }
+                    catch
+                    {
+
+                        MessageBox.Show("you must input a number and not a letter");
+                        heighttextBox.Text = "";
+                        heighttextBox.Focus();
+                    }
                     _result = _weightvalue / (_heightvalue * _heightvalue);
                     resulttextBox.Text = _result.ToString();
                     if (_result < 18.5)
