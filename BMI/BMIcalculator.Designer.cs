@@ -46,11 +46,11 @@
             this.poundButton = new System.Windows.Forms.RadioButton();
             this.kiloButton = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.weighttextBox = new System.Windows.Forms.TextBox();
+            this.heighttextBox = new System.Windows.Forms.TextBox();
             this.heightlabel = new System.Windows.Forms.Label();
             this.weightlabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.resulttextBox = new System.Windows.Forms.TextBox();
             this.calulatebutton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -85,7 +85,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(296, 186);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // sevenbutton
             // 
@@ -94,8 +93,10 @@
             this.sevenbutton.Name = "sevenbutton";
             this.sevenbutton.Size = new System.Drawing.Size(92, 40);
             this.sevenbutton.TabIndex = 12;
+            this.sevenbutton.Tag = "operand";
             this.sevenbutton.Text = "7";
             this.sevenbutton.UseVisualStyleBackColor = false;
+            this.sevenbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // fourbutton
             // 
@@ -104,8 +105,10 @@
             this.fourbutton.Name = "fourbutton";
             this.fourbutton.Size = new System.Drawing.Size(92, 40);
             this.fourbutton.TabIndex = 3;
+            this.fourbutton.Tag = "operand";
             this.fourbutton.Text = "4";
             this.fourbutton.UseVisualStyleBackColor = false;
+            this.fourbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // eightbutton
             // 
@@ -114,8 +117,10 @@
             this.eightbutton.Name = "eightbutton";
             this.eightbutton.Size = new System.Drawing.Size(92, 40);
             this.eightbutton.TabIndex = 13;
+            this.eightbutton.Tag = "operand";
             this.eightbutton.Text = "8";
             this.eightbutton.UseVisualStyleBackColor = false;
+            this.eightbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // fifthbutton
             // 
@@ -124,8 +129,10 @@
             this.fifthbutton.Name = "fifthbutton";
             this.fifthbutton.Size = new System.Drawing.Size(92, 40);
             this.fifthbutton.TabIndex = 4;
+            this.fifthbutton.Tag = "operand";
             this.fifthbutton.Text = "5";
             this.fifthbutton.UseVisualStyleBackColor = false;
+            this.fifthbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // secondbutton
             // 
@@ -134,8 +141,10 @@
             this.secondbutton.Name = "secondbutton";
             this.secondbutton.Size = new System.Drawing.Size(92, 40);
             this.secondbutton.TabIndex = 1;
+            this.secondbutton.Tag = "operand";
             this.secondbutton.Text = "2";
             this.secondbutton.UseVisualStyleBackColor = false;
+            this.secondbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // ninebutton
             // 
@@ -144,8 +153,10 @@
             this.ninebutton.Name = "ninebutton";
             this.ninebutton.Size = new System.Drawing.Size(94, 40);
             this.ninebutton.TabIndex = 14;
+            this.ninebutton.Tag = "operand";
             this.ninebutton.Text = "9";
             this.ninebutton.UseVisualStyleBackColor = false;
+            this.ninebutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // sixthbutton
             // 
@@ -154,8 +165,10 @@
             this.sixthbutton.Name = "sixthbutton";
             this.sixthbutton.Size = new System.Drawing.Size(94, 40);
             this.sixthbutton.TabIndex = 5;
+            this.sixthbutton.Tag = "operand";
             this.sixthbutton.Text = "6";
             this.sixthbutton.UseVisualStyleBackColor = false;
+            this.sixthbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // thirdbutton
             // 
@@ -164,8 +177,10 @@
             this.thirdbutton.Name = "thirdbutton";
             this.thirdbutton.Size = new System.Drawing.Size(94, 40);
             this.thirdbutton.TabIndex = 2;
+            this.thirdbutton.Tag = "operand";
             this.thirdbutton.Text = "3";
             this.thirdbutton.UseVisualStyleBackColor = false;
+            this.thirdbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // firstbutton
             // 
@@ -174,8 +189,10 @@
             this.firstbutton.Name = "firstbutton";
             this.firstbutton.Size = new System.Drawing.Size(92, 40);
             this.firstbutton.TabIndex = 0;
+            this.firstbutton.Tag = "operand";
             this.firstbutton.Text = "1";
             this.firstbutton.UseVisualStyleBackColor = false;
+            this.firstbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // pointbutton
             // 
@@ -184,8 +201,10 @@
             this.pointbutton.Name = "pointbutton";
             this.pointbutton.Size = new System.Drawing.Size(92, 39);
             this.pointbutton.TabIndex = 15;
+            this.pointbutton.Tag = "operand";
             this.pointbutton.Text = ".";
             this.pointbutton.UseVisualStyleBackColor = false;
+            this.pointbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // zerobutton
             // 
@@ -194,8 +213,10 @@
             this.zerobutton.Name = "zerobutton";
             this.zerobutton.Size = new System.Drawing.Size(92, 39);
             this.zerobutton.TabIndex = 16;
+            this.zerobutton.Tag = "operand";
             this.zerobutton.Text = "0";
             this.zerobutton.UseVisualStyleBackColor = false;
+            this.zerobutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // clearbutton
             // 
@@ -204,8 +225,10 @@
             this.clearbutton.Name = "clearbutton";
             this.clearbutton.Size = new System.Drawing.Size(94, 39);
             this.clearbutton.TabIndex = 17;
+            this.clearbutton.Tag = "operator";
             this.clearbutton.Text = "Clear";
             this.clearbutton.UseVisualStyleBackColor = false;
+            this.clearbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // backbutton
             // 
@@ -215,8 +238,10 @@
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(147, 41);
             this.backbutton.TabIndex = 1;
+            this.backbutton.Tag = "operator";
             this.backbutton.Text = "Backspace";
             this.backbutton.UseVisualStyleBackColor = false;
+            this.backbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // groupBox1
             // 
@@ -260,36 +285,38 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.weighttextBox);
+            this.panel1.Controls.Add(this.heighttextBox);
             this.panel1.Controls.Add(this.heightlabel);
             this.panel1.Controls.Add(this.weightlabel);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.resulttextBox);
             this.panel1.Location = new System.Drawing.Point(2, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 144);
             this.panel1.TabIndex = 3;
             // 
-            // textBox3
+            // weighttextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(102, 66);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(191, 37);
-            this.textBox3.TabIndex = 4;
+            this.weighttextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.weighttextBox.Location = new System.Drawing.Point(111, 66);
+            this.weighttextBox.Multiline = true;
+            this.weighttextBox.Name = "weighttextBox";
+            this.weighttextBox.Size = new System.Drawing.Size(182, 37);
+            this.weighttextBox.TabIndex = 4;
+            this.weighttextBox.Click += new System.EventHandler(this.weighttextBox_Click);
+            this.weighttextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // heighttextBox
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(102, 102);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(191, 38);
-            this.textBox2.TabIndex = 3;
+            this.heighttextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.heighttextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.heighttextBox.Location = new System.Drawing.Point(111, 102);
+            this.heighttextBox.Multiline = true;
+            this.heighttextBox.Name = "heighttextBox";
+            this.heighttextBox.Size = new System.Drawing.Size(182, 38);
+            this.heighttextBox.TabIndex = 3;
+            this.heighttextBox.Click += new System.EventHandler(this.heighttextBox_Click);
+            this.heighttextBox.TextChanged += new System.EventHandler(this.heighttextBox_TextChanged);
             // 
             // heightlabel
             // 
@@ -305,20 +332,21 @@
             // 
             this.weightlabel.Location = new System.Drawing.Point(3, 66);
             this.weightlabel.Name = "weightlabel";
-            this.weightlabel.Size = new System.Drawing.Size(93, 37);
+            this.weightlabel.Size = new System.Drawing.Size(102, 37);
             this.weightlabel.TabIndex = 1;
             this.weightlabel.Text = "Weight";
             this.weightlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // resulttextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(3, 8);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(290, 55);
-            this.textBox1.TabIndex = 0;
+            this.resulttextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.resulttextBox.Location = new System.Drawing.Point(3, 8);
+            this.resulttextBox.Multiline = true;
+            this.resulttextBox.Name = "resulttextBox";
+            this.resulttextBox.ReadOnly = true;
+            this.resulttextBox.Size = new System.Drawing.Size(290, 55);
+            this.resulttextBox.TabIndex = 0;
+            this.resulttextBox.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // calulatebutton
             // 
@@ -330,6 +358,7 @@
             this.calulatebutton.TabIndex = 4;
             this.calulatebutton.Text = "Calculate";
             this.calulatebutton.UseVisualStyleBackColor = false;
+            this.calulatebutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // BMIcalculator
             // 
@@ -379,11 +408,11 @@
         private System.Windows.Forms.RadioButton poundButton;
         private System.Windows.Forms.RadioButton kiloButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox weighttextBox;
+        private System.Windows.Forms.TextBox heighttextBox;
         private System.Windows.Forms.Label heightlabel;
         private System.Windows.Forms.Label weightlabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox resulttextBox;
         private System.Windows.Forms.Button calulatebutton;
     }
 }
