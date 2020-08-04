@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.sevenbutton = new System.Windows.Forms.Button();
             this.fourbutton = new System.Windows.Forms.Button();
@@ -52,9 +53,11 @@
             this.weightlabel = new System.Windows.Forms.Label();
             this.resulttextBox = new System.Windows.Forms.TextBox();
             this.calulatebutton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -303,8 +306,6 @@
             this.weighttextBox.Name = "weighttextBox";
             this.weighttextBox.Size = new System.Drawing.Size(182, 37);
             this.weighttextBox.TabIndex = 4;
-            this.weighttextBox.Click += new System.EventHandler(this.weighttextBox_Click);
-            this.weighttextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // heighttextBox
             // 
@@ -315,8 +316,6 @@
             this.heighttextBox.Name = "heighttextBox";
             this.heighttextBox.Size = new System.Drawing.Size(182, 38);
             this.heighttextBox.TabIndex = 3;
-            this.heighttextBox.Click += new System.EventHandler(this.heighttextBox_Click);
-            this.heighttextBox.TextChanged += new System.EventHandler(this.heighttextBox_TextChanged);
             // 
             // heightlabel
             // 
@@ -358,7 +357,11 @@
             this.calulatebutton.TabIndex = 4;
             this.calulatebutton.Text = "Calculate";
             this.calulatebutton.UseVisualStyleBackColor = false;
-            this.calulatebutton.Click += new System.EventHandler(this.BMIButton_Click);
+            this.calulatebutton.Click += new System.EventHandler(this.calulatebutton_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // BMIcalculator
             // 
@@ -384,6 +387,7 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -414,6 +418,7 @@
         private System.Windows.Forms.Label weightlabel;
         private System.Windows.Forms.TextBox resulttextBox;
         private System.Windows.Forms.Button calulatebutton;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
