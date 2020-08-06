@@ -342,13 +342,12 @@
             // resulttextBox
             // 
             this.resulttextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.resulttextBox.Location = new System.Drawing.Point(3, 8);
+            this.resulttextBox.Location = new System.Drawing.Point(-9, 0);
             this.resulttextBox.Multiline = true;
             this.resulttextBox.Name = "resulttextBox";
             this.resulttextBox.ReadOnly = true;
-            this.resulttextBox.Size = new System.Drawing.Size(290, 55);
+            this.resulttextBox.Size = new System.Drawing.Size(315, 63);
             this.resulttextBox.TabIndex = 0;
-            this.resulttextBox.Click += new System.EventHandler(this.BMIButton_Click);
             // 
             // calulatebutton
             // 
