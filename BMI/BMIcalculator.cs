@@ -17,6 +17,9 @@ namespace BMI
         private double _heightvalue;
         private double _result;
 
+        private bool _weightIsSelected;
+        private bool _backspace;
+
         
         public BMIcalculator()
         {
@@ -25,41 +28,45 @@ namespace BMI
 
       
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void BMICalculatorForm_Load(object sender, EventArgs e)
         {
-            
+            this._weightIsSelected = false;
+            this._backspace = false;
+           
         }
 
         private void BMIButton_Click(object sender, EventArgs e)
         {
       
-            Button bmibotton = sender as Button;
-            if (heighttextBox.Focus())
-            {
-             
-                heighttextBox.Text += bmibotton.Text;
-                
-            }
-            else if (weighttextBox.Focus())
-            {
+            Button bmiButton = sender as Button;
 
-              
-                weighttextBox.Text += bmibotton.Text;
-               
-            }
-            if (bmibotton.Text.Length >7)
+
+            if (this._weightIsSelected)
             {
-                bmibotton.Font = new Font("Microsoft Sans Serif", 14.0f);
+               
+               weighttextBox.Text += bmiButton.Text;
+            }
+            if (!this._weightIsSelected)
+            {
+              
+            heighttextBox.Text += bmiButton.Text;
+            }
+          
+
+
+            if (bmiButton.Text.Length >7)
+            {
+                bmiButton.Font = new Font("Microsoft Sans Serif", 14.0f);
             }
             else
             {
-                bmibotton.Font = new Font("Microsoft Sans Serif", 20.0f);
+                bmiButton.Font = new Font("Microsoft Sans Serif", 20.0f);
             }
 
-            if (bmibotton.Tag.ToString() == "operator")
+            if (bmiButton.Tag.ToString() == "operator")
             {
 
-                if(bmibotton.Name == "clearbutton")
+                if(bmiButton.Name == "clearbutton")
                 {
                     weighttextBox.Text = "";
                     heighttextBox.Text = "";
@@ -68,8 +75,29 @@ namespace BMI
                     kiloButton.Checked = false;
 
                 }
-               
-            }
+                if (bmiButton.Name == "backbutton")
+                {
+                    if (_backspace)
+                    {
+                        try
+                        {
+                            weighttextBox.Text = weighttextBox.Text.Remove(weighttextBox.Text.Length - 1);
+                        }
+                        catch { }
+                    }
+                    if (!_backspace)
+                    {
+
+                        try
+                        {
+                            heighttextBox.Text = heighttextBox.Text.Substring(0, heighttextBox.Text.Length - 1);
+                        }
+                        catch { }
+
+                    }
+                }
+
+                }
            
 
         }
@@ -199,6 +227,18 @@ namespace BMI
 
             }
             
+        }
+
+        private void weighttextBox_Click(object sender, EventArgs e)
+        {
+            this._weightIsSelected = true;
+            this._backspace = true;
+        }
+
+        private void heighttextBox_Click(object sender, EventArgs e)
+        {
+            this._weightIsSelected = false;
+            this._backspace = false;
         }
     }
 }

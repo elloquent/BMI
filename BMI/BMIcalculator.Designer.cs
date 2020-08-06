@@ -236,13 +236,14 @@
             // backbutton
             // 
             this.backbutton.BackColor = System.Drawing.Color.Fuchsia;
-            this.backbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbutton.BackgroundImage = global::BMI.Properties.Resources.rsz_download_1;
+            this.backbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.backbutton.Font = new System.Drawing.Font("Webdings", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbutton.Location = new System.Drawing.Point(151, 209);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(147, 41);
             this.backbutton.TabIndex = 1;
             this.backbutton.Tag = "operator";
-            this.backbutton.Text = "Backspace";
             this.backbutton.UseVisualStyleBackColor = false;
             this.backbutton.Click += new System.EventHandler(this.BMIButton_Click);
             // 
@@ -306,6 +307,7 @@
             this.weighttextBox.Name = "weighttextBox";
             this.weighttextBox.Size = new System.Drawing.Size(182, 37);
             this.weighttextBox.TabIndex = 4;
+            this.weighttextBox.Click += new System.EventHandler(this.weighttextBox_Click);
             // 
             // heighttextBox
             // 
@@ -316,6 +318,7 @@
             this.heighttextBox.Name = "heighttextBox";
             this.heighttextBox.Size = new System.Drawing.Size(182, 38);
             this.heighttextBox.TabIndex = 3;
+            this.heighttextBox.Click += new System.EventHandler(this.heighttextBox_Click);
             // 
             // heightlabel
             // 
@@ -381,7 +384,7 @@
             this.Name = "BMIcalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI_Calculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.BMICalculatorForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
